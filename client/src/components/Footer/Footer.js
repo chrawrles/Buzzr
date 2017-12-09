@@ -18,7 +18,7 @@ const Footer = () => (
         <a href="/restaurantsignup"><span className='glyphicon glyphicon-user'></span><br/>Host Login
         </a>
       </Col>
-      <Col size='xs-3' className='signuptab'>
+      <Col size='xs-2' className='signuptab'>
         <a href="/signup"><span className='glyphicon glyphicon-pencil'></span><br/>Sign Up!
         </a>
       </Col>
