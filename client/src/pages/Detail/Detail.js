@@ -9,7 +9,7 @@ import "./Detail.css";
 
 class Detail extends Component {
   state = {
-    users: [],
+    persons: [],
     name: "",
     partysize: 0,
     restaurant: {},
@@ -28,7 +28,7 @@ class Detail extends Component {
   loadPersons = () => {
     API.getPersons()
       .then(res =>
-        this.setState({ users: res.data, name: "", partysize: "", phone: "", checkinto: "", userrequest: ""})
+        this.setState({ personss: res.data, name: "", partysize: "", phone: "", checkinto: "", personsrequest: ""})
       )
       .catch(err => console.log(err));
 
@@ -63,9 +63,9 @@ class Detail extends Component {
             name: this.state.name,
             phone: this.state.phone,
             partysize: this.state.partysize,
-            userrequest: this.state.userrequest,
+            personsrequest: this.state.personsrequest,
             checkinto: this.state.restaurant.name,
-            userwait: this.state.restaurant.waittime,
+            personswait: this.state.restaurant.waittime,
             id: this.props.match.params.id
           })
           this.props.history.push('/Trivia')})
@@ -109,9 +109,9 @@ class Detail extends Component {
                   />
                   Special Request?
                   <Input
-                  value={this.state.userrequest}
+                  value={this.state.personsrequest}
                   onChange={this.handleInputChange}
-                  name="userrequest"
+                  name="personsrequest"
                   placeholder="Birthday, Highchair, Anniversary"
                   />
                   <FormBtn
