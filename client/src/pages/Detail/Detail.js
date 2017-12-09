@@ -22,11 +22,11 @@ class Detail extends Component {
     API.loadRestaurant(this.props.match.params.id)
       .then(res => this.setState({ restaurant: res.data }))
       .catch(err => console.log(err));
-      this.loadUsers();
+      this.loadPersons();
   }
 
-  loadUsers = () => {
-    API.getUsers()
+  loadPersons = () => {
+    API.getPersons()
       .then(res =>
         this.setState({ users: res.data, name: "", partysize: "", phone: "", checkinto: "", userrequest: ""})
       )
@@ -34,9 +34,9 @@ class Detail extends Component {
 
   };
 
-  deleteUser = id => {
-    API.deleteUser(id)
-      .then(res => this.loadUsers())
+  deletePersons = id => {
+    API.deletePersons(id)
+      .then(res => this.loadPersons())
       .catch(err => console.log(err));
   };
 
@@ -59,7 +59,7 @@ class Detail extends Component {
       })
         .then(res => {
           console.log(this.state.restaurant.waittime);
-          API.saveUser({
+          API.savePersons({
             name: this.state.name,
             phone: this.state.phone,
             partysize: this.state.partysize,
@@ -80,7 +80,7 @@ class Detail extends Component {
         <Nav />
           <Container fluid>
           <Col size="sm-2 md-2 lg-2">
-          </Col> 
+          </Col>
               <Col size="sm-8 md-8 lg-8" className='checkinform'>
                 <div>
                   <h2>Please Check In</h2>
