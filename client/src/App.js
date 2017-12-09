@@ -7,6 +7,8 @@ import Trivia from "./pages/Trivia";
 import Restaurants from "./pages/Restaurants";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
+import SignupForm from "./components/SignupForm";
+import LoginForm from "./components/LoginForm";
 
 
 const App = () =>
@@ -21,6 +23,8 @@ const App = () =>
         <Route exact path="/restaurants" component={Restaurants} />
         <Route exact path="/checkin/:id" component={Detail} />
         <Route exact path="/management/:id" component={Management} />
+        <Route exact path="/signup" component={SignupForm} />
+        <Route exact path="/login" component={LoginForm} />
         <Route component={NoMatch} />
       </Switch>
     </div>

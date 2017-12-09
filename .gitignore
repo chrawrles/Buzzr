@@ -59,3 +59,6 @@ typings/
 
 # annoying mac file
 .DS_Store
+
+package-lock.json
+yarn.lock
