@@ -10,10 +10,10 @@ import Nav from "../../components/Nav";
 
 class Management extends Component {
   state = {
-    users: [],
+    persons: [],
     name: "",
     partysize: 0,
-    userwait: "",
+    personwait: "",
   };
 
     componentDidMount() {
@@ -23,7 +23,7 @@ class Management extends Component {
     loadUsers = () => {
       API.getUser(this.props.match.params.id)
         .then(res =>
-          this.setState({ users: res.data})
+          this.setState({ persons: res.data})
         )
         .catch(err => console.log(err));
         this.loadRestaurants();
@@ -36,9 +36,9 @@ class Management extends Component {
 
     }
     deleteUser = id => {
-      this.state.user.userwait=this.state.user.userwait - 5;
+      this.state.person.personwait=this.state.person.personwait - 5;
       API.updateRestaurant(this.props.match.params.id, {
-        waittime: this.state.userwait
+        waittime: this.state.personwait
       })
       API.deleteUser(id)
         .then(res => this.loadUsers())
@@ -46,9 +46,9 @@ class Management extends Component {
     };
 
     increaseTimer = id => {
-      this.state.userwait=this.state.userwait += 5
+      this.state.personwait=this.state.personwait += 5
       API.updateUser (id, {
-        userwait: this.state.userwait
+        personwait: this.state.personwait
       })
         .then(res => this.loadUsers())
         .catch(err => console.log(err));
@@ -90,24 +90,24 @@ class Management extends Component {
                 <Col size="md-1 xs-1">Wait Time</Col>
                 <Col size="md-1 xs-1"></Col>
                 </Row>
-                {this.state.users.length ? (
+                {this.state.persons.length ? (
 
                   <List>
-                    {this.state.users.map(user => (
-                      <ListItem key={user._id}>
+                    {this.state.persons.map(person => (
+                      <ListItem key={person._id}>
                             <Row>
                             <Col size="md-1 xs-1">
-                            {user.partysize}
+                            {person.partysize}
                             </Col>
                             <Col size="md-9 xs-9">
-                            {user.name}
+                            {person.name}
                             </Col>
                             <Col size="md-1 xs-1">
-                            {user.userwait}
+                            {person.personwait}
                             </Col>
                             <Col size="md-1 xs-1">
-                            <DeleteBtn onClick={() => this.deleteUser(user._id)} />
-                            <DeleteBtn onClick={() => this.increaseTimer(user._id)} />
+                            <DeleteBtn onClick={() => this.deleteUser(person._id)} />
+                            <DeleteBtn onClick={() => this.increaseTimer(person._id)} />
                             </Col>
                             </Row>
                       </ListItem>
