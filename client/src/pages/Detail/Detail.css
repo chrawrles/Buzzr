@@ -1,0 +1,16 @@
+.checkinform {
+  margin-top: 60px;
+}
+h2 {
+    color: gray;
+}
+form {
+    color: gray;
+}
+.btn.btn-success {
+    background-color: #c41200 !important;
+    border-color: gray !important;
+}
+.btn.btn-success:active {
+    background-color: #dfc12a !important;
+}

@@ -1,0 +1,38 @@
+.signup {
+  background-color: yellow;
+  color: red;
+  font-size: 50px;
+}
+
+.separate {
+  padding-top: 50px;
+}
+
+h1 {
+  max-width: 500px;
+    margin: auto;
+}
+
+.container-fluid {
+  align-content: center;
+  max-width: 500px;
+    margin: auto;
+}
+
+.username {
+  font-size: 50px;
+  padding-top: 50px;
+  align-content: center;
+}
+
+.password {
+  font-size: 50px;
+  padding-top: 50px;
+  align-content: center;
+}
+
+.confirm {
+  font-size: 50px;
+  padding-top: 50px;
+  align-content: center;
+}

@@ -1,0 +1,53 @@
+.question {
+    margin: 25px 0;
+    background-color: #151515;
+    border-radius: 10px;
+    padding: 7px 30px;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.question h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.question ul {
+    margin-top: 16px;
+}
+
+.question li {
+    background-color: rgba(0, 0, 0, .05);
+    padding: 16px 8px;
+    border-radius: 2px;
+    margin: 16px 0 0 0;
+    user-select: none;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.question li:hover {
+    background-color: white;
+    color: #151515;
+    cursor: pointer;
+}
+
+.question li.correct {
+    background-color: rgba(0, 255, 0, .1);
+    color: green;
+    cursor: default;
+}
+
+.question li.incorrect {
+    background-color: rgba(255, 0, 0, .1);
+    color: red;
+    cursor: default;
+}
+
+.question li.no-class {
+    background-color: rgba(0, 0, 0, .05);
+    cursor: default;
+}

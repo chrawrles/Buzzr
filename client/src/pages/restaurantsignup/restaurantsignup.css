@@ -1,0 +1,18 @@
+.signupform {
+  margin-top: 50px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+ .formpadding {
+   margin-top: 50px;
+ }
+ img {
+   width: 100%;
+ }
+}
+@media only screen and (min-width: 400px) {
+  img {
+    width: 100%;
+  }
+ }

@@ -1,0 +1,90 @@
+body {
+    background-color: #151515 !important;
+    /* background-image: url("../../images/spices.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed; */
+}
+
+/* Body */
+/* <Col size="md-12 homespacing"> */
+.homespacing {
+    margin-top: 60px;
+}
+.searchbarinput {
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+button {
+  color: transparent;
+  background-color: transparent;
+  border: 0px solid #151515;
+
+}
+
+.homeimages {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin: auto;
+}
+.homedetail {
+  border-radius: 5px;
+  border: 1px solid #dfc12a;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.homedetails {
+  margin-top: 25px;
+  margin-left: 20px;
+  font-family: times;
+  font-size: 25px;
+  text-align: left;
+  padding: 0px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #dfc12a;
+}
+
+.row.homerow {
+  border-radius: 5px;
+  border: 0.8px solid #dfc12a;
+  border-color: white;
+  text-align: center;
+  font-size: 16px;
+}
+.homeimg {
+  height: 200px;
+  width: 225px;
+
+}
+
+h1 {
+    color: gray !important;
+    font-size: 298% !important;
+    text-shadow: none !important;
+    text-align: center;
+}
+
+/* List */
+a {
+  font-size: 16px;
+  color: white;
+}
+
+
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color:#151515;
+    }
+    .col-homespacing {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
