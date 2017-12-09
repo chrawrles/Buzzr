@@ -10,7 +10,7 @@ const Footer = () => (
         <a href="/"><span className='glyphicon glyphicon-home'></span><br/>Home
         </a>
       </Col>
-      <Col size='xs-3' className='triviatab'>
+      <Col size='xs-2' className='triviatab'>
         <a href="/Trivia"><span className='glyphicon glyphicon-question-sign'></span><br/>Trivia
         </a>
       </Col>

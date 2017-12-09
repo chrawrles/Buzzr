@@ -17,11 +17,11 @@ class Management extends Component {
   };
 
     componentDidMount() {
-      this.loadUsers();
+      this.loadPersons();
     }
 
-    loadUsers = () => {
-      API.getUser(this.props.match.params.id)
+    loadPersons = () => {
+      API.getPerson(this.props.match.params.id)
         .then(res =>
           this.setState({ persons: res.data})
         )
@@ -35,22 +35,22 @@ class Management extends Component {
       .catch(err => console.log(err));
 
     }
-    deleteUser = id => {
+    deletePerson = id => {
       this.state.person.personwait=this.state.person.personwait - 5;
       API.updateRestaurant(this.props.match.params.id, {
         waittime: this.state.personwait
       })
-      API.deleteUser(id)
-        .then(res => this.loadUsers())
+      API.deletePerson(id)
+        .then(res => this.loadPersons())
         .catch(err => console.log(err));
     };
 
     increaseTimer = id => {
       this.state.personwait=this.state.personwait += 5
-      API.updateUser (id, {
+      API.updatePerson (id, {
         personwait: this.state.personwait
       })
-        .then(res => this.loadUsers())
+        .then(res => this.loadPersons())
         .catch(err => console.log(err));
     };
 
@@ -64,12 +64,12 @@ class Management extends Component {
     handleFormSubmit = event => {
       event.preventDefault();
       if (this.state.name && this.state.phone) {
-        API.saveUser({
+        API.savePerson({
           name: this.state.title,
           phone: this.state.author,
           guest: this.state.synopsis
         })
-          .then(res => this.loadUsers())
+          .then(res => this.loadPersons())
           .catch(err => console.log(err));
       }
     };
@@ -106,7 +106,7 @@ class Management extends Component {
                             {person.personwait}
                             </Col>
                             <Col size="md-1 xs-1">
-                            <DeleteBtn onClick={() => this.deleteUser(person._id)} />
+                            <DeleteBtn onClick={() => this.deletePerson(person._id)} />
                             <DeleteBtn onClick={() => this.increaseTimer(person._id)} />
                             </Col>
                             </Row>
