@@ -28,7 +28,7 @@ class Detail extends Component {
   loadPersons = () => {
     API.getPersons()
       .then(res =>
-        this.setState({ personss: res.data, name: "", partysize: "", phone: "", checkinto: "", personsrequest: ""})
+        this.setState({ persons: res.data, name: "", partysize: "", phone: "", checkinto: "", personsrequest: ""})
       )
       .catch(err => console.log(err));
 
