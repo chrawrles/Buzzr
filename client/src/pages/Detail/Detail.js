@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Col, Container } from "../../components/Grid";
-
 import { Input, FormBtn } from "../../components/Form";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";

@@ -25,22 +25,22 @@ export default {
   },
   // Gets all restaurants
   getPersons: function() {
-    return axios.get("/api/users");
+    return axios.get("/api/persons");
   },
   // Gets the restaurant with the given id
   getPerson: function(id) {
-    return axios.get("/api/users?id=" + id);
+    return axios.get("/api/persons?id=" + id);
   },
 
   // Deletes the restaurant with the given id
   deletePerson: function(id) {
-    return axios.delete("/api/users/" + id);
+    return axios.delete("/api/persons/" + id);
   },
   // Saves a restaurant to the database
   savePerson: function(userData) {
-    return axios.post("/api/users", userData);
+    return axios.post("/api/persons", userData);
   },
   updatePerson: function(id, data) {
-    return axios.put("/api/users/" + id, data);
+    return axios.put("/api/persons/" + id, data);
   }
 };
