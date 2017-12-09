@@ -33,8 +33,8 @@ class Detail extends Component {
 
   };
 
-  deletePersons = id => {
-    API.deletePersons(id)
+  deletePerson = id => {
+    API.deletePerson(id)
       .then(res => this.loadPersons())
       .catch(err => console.log(err));
   };
@@ -58,7 +58,7 @@ class Detail extends Component {
       })
         .then(res => {
           console.log(this.state.restaurant.waittime);
-          API.savePersons({
+          API.savePerson({
             name: this.state.name,
             phone: this.state.phone,
             partysize: this.state.partysize,

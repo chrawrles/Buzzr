@@ -106,7 +106,7 @@ class restaurantsignup extends Component {
                     </FormBtn>
                   </form>
                 </Col>
-                <Col size="md-6 lg-6" className="formpadding">
+              <Col size="md-6 lg-6" className="formpadding">
                   <div>
                     <h1>Near By Restaurants</h1>
                   </div>
@@ -128,7 +128,7 @@ class restaurantsignup extends Component {
                     <h3>No Results to Display</h3>
                   )}
                 </Col>
-
+                
               </Row>
             </Container>
           <Footer />
