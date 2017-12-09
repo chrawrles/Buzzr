@@ -37,8 +37,8 @@ export default {
     return axios.delete("/api/persons/" + id);
   },
   // Saves a restaurant to the database
-  savePerson: function(userData) {
-    return axios.post("/api/persons", userData);
+  savePerson: function(personData) {
+    return axios.post("/api/persons", personData);
   },
   updatePerson: function(id, data) {
     return axios.put("/api/persons/" + id, data);
