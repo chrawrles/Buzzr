@@ -1,11 +1,10 @@
 
 .btn {
-    background-color: #151515 !important;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    border-radius: 10px;
-    color: white;
+    background-color: #fff !important;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #24292e;
+    color: #24292e;
     font-size: 18px;
     font-weight: bold;
     padding: 16px;
@@ -14,10 +13,8 @@
   }
   .btn:hover {
     background-color: white !important;
-    color: #151515 !important;
+    color: #24292e !important;
     border-style: solid;
-    border-width: 1px;
-    border-color: white;
+    border: 1px solid #24292e;
+
 }
-
-

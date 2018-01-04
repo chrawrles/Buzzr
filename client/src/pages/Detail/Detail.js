@@ -12,6 +12,7 @@ class Detail extends Component {
     name: "",
     partysize: 0,
     restaurant: {},
+    name: "",
     zip: "",
     img: "",
     waittime: "",
@@ -78,11 +79,13 @@ class Detail extends Component {
       <div className="detail-wrapper">
         <Nav />
           <Container fluid>
-          <Col size="sm-2 md-2 lg-2">
+          <Col size="md-6" className='checkindetails'>
+
+          <img alt='res' className="checkinimg" src={this.state.restaurant.img} />
           </Col>
-              <Col size="sm-8 md-8 lg-8" className='checkinform'>
+              <Col size="md-5" className='checkinform'>
                 <div>
-                  <h2>Please Check In</h2>
+                <h2>Checking into  <br />{this.state.restaurant.name}</h2>
                 </div>
                 <form>
                 Name
@@ -90,28 +93,28 @@ class Detail extends Component {
                     value={this.state.name}
                     onChange={this.handleInputChange}
                     name="name"
-                    placeholder="Required"
+                    placeholder=""
                   />
                   Party Size
                   <Input
                     value={this.state.partysize}
                     onChange={this.handleInputChange}
                     name="partysize"
-                    placeholder="Required"
+                    placeholder=""
                   />
                   Phone Number
                   <Input
                   value={this.state.phone}
                   onChange={this.handleInputChange}
                   name="phone"
-                  placeholder="Required"
+                  placeholder=""
                   />
                   Special Request?
                   <Input
                   value={this.state.personsrequest}
                   onChange={this.handleInputChange}
                   name="personsrequest"
-                  placeholder="Birthday, Highchair, Anniversary"
+                  placeholder=""
                   />
                   <FormBtn
                     disabled={!(this.state.name && this.state.phone && this.state.partysize)}

@@ -1,48 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700);
 body {
-    background-color: #151515 !important;
-    /* background-image: url("../../images/spices.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    background-attachment: fixed; */
+  background-color: #f8f8f8 !important;
+  background-image: url("../../images/simple.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
 }
 
-/* Body */
-/* <Col size="md-12 homespacing"> */
-.homespacing {
-    margin-top: 60px;
+.container {
+  width: 80%;
 }
+
+.searchbar {
+  margin-top: 60px;
+}
+
 .searchbarinput {
   width: 100%;
   margin-bottom: 20px;
-
 }
+
 button {
   color: transparent;
   background-color: transparent;
   border: 0px solid #151515;
-
 }
 
 .homeimages {
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding: 0;
+  border: .5px solid black;
   margin: auto;
 }
-.homedetail {
-  border-radius: 5px;
-  border: 1px solid #dfc12a;
+
+.waitdetail {
+  opacity: 0.8;
+  color: #fff;
+  padding: 3px 0px;
+  border-radius: 0px;
+  margin-top: 9px;
+  background-color: #000;
   text-align: center;
-  color: white;
-  font-size: 30px;
 }
 
 .homedetails {
-  margin-top: 25px;
-  margin-left: 20px;
-  font-family: times;
-  font-size: 25px;
-  text-align: left;
-  padding: 0px;
+  position: absolute;
+  opacity: 0.7;
+  top: 0px;
+  border-bottom-right-radius: 3px;
+  background-color: #000;
+  color: #FFF;
+  width: auto;
+  max-width: 200px;
+}
+
+.locationdetail {
+  position: absolute;
+  opacity: 0.7;
+  bottom: 90px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #000;
+  color: #FFF;
+  width: auto;
 }
 
 a:hover {
@@ -50,41 +69,37 @@ a:hover {
   color: #dfc12a;
 }
 
+.resultbox {
+  padding: 0px 40px;
+}
+
 .row.homerow {
-  border-radius: 5px;
-  border: 0.8px solid #dfc12a;
-  border-color: white;
+  border: 0px solid #000;
   text-align: center;
   font-size: 16px;
 }
-.homeimg {
-  height: 200px;
-  width: 225px;
 
+.homeimg {
+  width: 100%;
+}
+
+.form-control {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-    color: gray !important;
-    font-size: 298% !important;
-    text-shadow: none !important;
-    text-align: center;
+  color: gray !important;
+  font-size: 298% !important;
+  text-shadow: none !important;
+  text-align: center;
 }
 
 /* List */
+
 a {
-  font-size: 16px;
-  color: white;
-}
-
-
-
-/* Media Queries */
-@media only screen and (min-width: 768px) {
-    body {
-        background-color:#151515;
-    }
-    .col-homespacing {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-variant: all-caps;
+  color: #fff;
 }

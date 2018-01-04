@@ -1,5 +1,5 @@
 .next-button {
-    background-color: #151515;
+    background-color: #24292e !important;
     color: white !important;
     font-size: 18px;
     font-weight: bold;
@@ -14,7 +14,7 @@
 
 .next-button:hover {
     background-color: white;
-    color: #151515 !important;
+    color: #24292e !important;
     border-style: solid;
     border-width: 1px;
     border-color: white;

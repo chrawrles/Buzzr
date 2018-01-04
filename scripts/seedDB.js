@@ -14,205 +14,78 @@ mongoose.connect(
 
 const restaurantSeed = [
   {
-    name: "Spoleto - My Italian Kitchen",
-
-
-    zip: "92618",
+    name: "Club 33",
+    zip: "Anaheim, CA 92802",
     waittime: 0,
-    img: "https://s3-media2.fl.yelpcdn.com/bphoto/jGPA86l4dXadcQSC7OXpPA/o.jpg"
+    img: "https://s3-media3.fl.yelpcdn.com/bphoto/B5U0vD-Ak08DZl_Mhwed1Q/348s.jpg"
   },
   {
-    name: "SideDoor ",
-
-
-    zip: "92618",
+    name: "The Ranch Restaurant",
+    zip: "Anaheim, CA 92805",
     waittime: 0,
-    img: "https://s3-media4.fl.yelpcdn.com/bphoto/fJeaVLzTR9p-Xdk16mpWKA/o.jpg"
+    img: "https://s3-media1.fl.yelpcdn.com/bphoto/sQC7k4Nk7C6R11j3-u_xvw/348s.jpg"
   },
   {
-    name: "Urban Seoul",
-
-
-    zip: "92612",
+    name: "Karl Strauss Brewing Company",
+    zip: "Anaheim, CA 92806",
     waittime: 0,
-    img: "https://s3-media1.fl.yelpcdn.com/bphoto/9J8QyCNLdLzUP5BNHcfLow/o.jpg"
+    img: "https://s3-media2.fl.yelpcdn.com/bphoto/d1RyaJqXeoGVZ1Ga3RUPqw/348s.jpg"
   },
   {
-    name: "EMC Seafood & Raw Bar",
-
-
-    zip: "92604",
+    name: "Calivino Wine Pub",
+    zip: "Anaheim, CA 92806",
     waittime: 0,
-    img: "https://s3-media2.fl.yelpcdn.com/bphoto/j7tHg3RbX77bO85Ytbf8mQ/o.jpg"
+    img: "https://s3-media2.fl.yelpcdn.com/bphoto/2eUH_mkrGxNGjF-zhZTXoA/348s.jpg"
   },
   {
-    name: "The Stand",
-
-
-    zip: "92618",
+    name: "Zov’s Anaheim",
+    zip: "Anaheim, CA 92805",
     waittime: 0,
-    img: "https://s3-media3.fl.yelpcdn.com/bphoto/SEqcOorgORBB4T0T9qnZFg/o.jpg"
+    img: "https://s3-media1.fl.yelpcdn.com/bphoto/1euaIf9LJJaR81WqDrUSNQ/348s.jpg"
   },
   {
-    name: "The Cut",
-
-
-    zip: "92606",
+    name: "Ruth’s Chris Steak House ",
+    zip: "Anaheim, CA 92802",
     waittime: 0,
-    img: "https://s3-media1.fl.yelpcdn.com/bphoto/yNgml_VqyHNadYuBUu7bhA/o.jpg"
+    img: "https://s3-media2.fl.yelpcdn.com/bphoto/5uFji20XRmaFzthrr3BMLw/348s.jpg"
   },
   {
-    name: "CAVA",
-
-
-    zip: "92606",
+    name: "Club 33",
+    zip: "Anaheim, CA 92802",
     waittime: 0,
-    img: "https://s3-media3.fl.yelpcdn.com/bphoto/V4ANxxCFV94x0Jyx8H-2eg/ls.jpg"
+    img: "https://s3-media3.fl.yelpcdn.com/bphoto/B5U0vD-Ak08DZl_Mhwed1Q/348s.jpg"
   },
   {
-    name: "Puesto",
-
-
-    zip: "92618",
+    name: "The Ranch Restaurant",
+    zip: "Anaheim, CA 92805",
     waittime: 0,
-    img: "https://s3-media3.fl.yelpcdn.com/bphoto/EK9hda6PrKh0bG9DIaeioQ/o.jpg"
+    img: "https://s3-media1.fl.yelpcdn.com/bphoto/sQC7k4Nk7C6R11j3-u_xvw/348s.jpg"
   },
   {
-    name: "Blaze Fast-Fire’d Pizza",
-
-
-    zip: "92618",
+    name: "Karl Strauss Brewing Company",
+    zip: "Anaheim, CA 92806",
     waittime: 0,
-    img: "https://s3-media3.fl.yelpcdn.com/bphoto/n18QxnT_nbysFcSkktjQfg/o.jpg"
+    img: "https://s3-media2.fl.yelpcdn.com/bphoto/d1RyaJqXeoGVZ1Ga3RUPqw/348s.jpg"
   },
   {
-    name: "Meizhou Dongpo",
-
-
-    zip: "92604",
+    name: "Calivino Wine Pub",
+    zip: "Anaheim, CA 92806",
     waittime: 0,
-    img: "https://s3-media2.fl.yelpcdn.com/bphoto/4mqls8Yp_V_CXOrwA0bV7Q/ls.jpg"
+    img: "https://s3-media2.fl.yelpcdn.com/bphoto/2eUH_mkrGxNGjF-zhZTXoA/348s.jpg"
   },
   {
-    name: "Twenty Eight",
-
-
-    zip: "92604",
+    name: "Zov’s Anaheim",
+    zip: "Anaheim, CA 92805",
     waittime: 0,
-    img: "https://s3-media4.fl.yelpcdn.com/bphoto/rUTZJ97H_UQYEk1SKezD2w/o.jpg"
+    img: "https://s3-media1.fl.yelpcdn.com/bphoto/1euaIf9LJJaR81WqDrUSNQ/348s.jpg"
   },
   {
-    name: "Caspian Restaurant",
-
-
-    zip: "92604",
+    name: "Ruth’s Chris Steak House ",
+    zip: "Anaheim, CA 92802",
     waittime: 0,
-    img: "https://s3-media2.fl.yelpcdn.com/bphoto/XrGhXIjWY8kFiQnK-CMFTw/o.jpg"
-  },
-  {
-    name: "Zov’s Irvine",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media2.fl.yelpcdn.com/bphoto/4mqls8Yp_V_CXOrwA0bV7Q/ls.jpg"
-  },
-  {
-    name: "Nick’s Laguna Beach",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media1.fl.yelpcdn.com/bphoto/aC1d4ZNWAmG_pOJmWxs5GQ/o.jpg"
-  },
-  {
-    name: "Daily Grill",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media3.fl.yelpcdn.com/bphoto/SuNgo06OR42H4iLMdSMylg/o.jpg"
-  },
-  {
-    name: "Driftwood Kitchen",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media2.fl.yelpcdn.com/bphoto/gCZGy9GzZmKO8-bzti5v9Q/o.jpg"
-  },
-  {
-    name: "Mix Mix Kitchen Bar",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media2.fl.yelpcdn.com/bphoto/ng3w9o1zECFZxlVbYErdAg/o.jpg"
-  },
-  {
-    name: "The Recess Room",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media1.fl.yelpcdn.com/bphoto/I4OchMRcpfzkrbbk7WZ0Uw/o.jpg"
-  },
-  {
-    name: "Ten Asian Bistro",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media1.fl.yelpcdn.com/bphoto/VEtT-m-e0FuZBwPhoTND8g/o.jpg"
-  },
-  {
-    name: "Kang Ho Dong Baekjeong",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media4.fl.yelpcdn.com/bphoto/LFu7lLVaaEEO4sc6SnF34g/o.jpg"
-  },
-  {
-    name: "Hen House Grill",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media1.fl.yelpcdn.com/bphoto/cmNCpAic5dhnSDsXR_httA/o.jpg"
-  },
-  {
-    name: "Asian Box",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media2.fl.yelpcdn.com/bphoto/wI670E5RdUav3z1IUZK8iw/o.jpg"
-  },
-  {
-    name: "Bosscat Kitchen and Libations",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media4.fl.yelpcdn.com/bphoto/A0gMmzqDOyWtNLjA-F5ttg/o.jpg"
-  },
-  {
-    name: "Habana",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media2.fl.yelpcdn.com/bphoto/eOunbCV0f3hsmxc2Ufbmeg/o.jpg"
-  },
-  {
-    name: "Kakurega",
-
-
-    zip: "92604",
-    waittime: 0,
-    img: "https://s3-media4.fl.yelpcdn.com/bphoto/ot8YRhYICjJQcWfAjtxBVA/o.jpg"
+    img: "https://s3-media2.fl.yelpcdn.com/bphoto/5uFji20XRmaFzthrr3BMLw/348s.jpg"
   }
+
 ];
 
 
