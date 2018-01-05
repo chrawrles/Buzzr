@@ -4,7 +4,7 @@
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 let MONGO_URL
-const MONGO_LOCAL_URL = 'mongodb://heroku_8k5t19nh:6fp3qhr6hfbbsl30mbpbffna27@ds113668.mlab.com:13668/heroku_8k5t19nh'
+const MONGO_LOCAL_URL = 'mongodb://josemorales:jmora123@ds241737.mlab.com:41737/heroku_l2j9jbk8'
 
 
 if (process.env.MONGODB_URI) {

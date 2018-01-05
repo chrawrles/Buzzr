@@ -5,7 +5,7 @@ mongoose.Promise = global.Promise;
 // This file empties the Restaurants collection and inserts the restaurants below
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://heroku_8k5t19nh:6fp3qhr6hfbbsl30mbpbffna27@ds113668.mlab.com:13668/heroku_8k5t19nh'
+  process.env.MONGODB_URI || 'mongodb://josemorales:jmora123@ds241737.mlab.com:41737/heroku_l2j9jbk8'
 ,
   {
     useMongoClient: true
